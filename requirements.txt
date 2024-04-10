@@ -2,3 +2,4 @@ tgcrypto
 pyrogram
 pytube
 flask==1.1.2
+jinja2
