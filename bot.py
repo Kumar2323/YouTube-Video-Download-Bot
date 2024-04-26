@@ -8,7 +8,7 @@ import asyncio
 
 API_ID = '25765618'
 API_HASH = '6eb079af3c5b768e8510486253fb4e9c'
-BOT_TOKEN = '7078527720:AAFUYBmEjb7cwMJACFVccosdSc0WWJck3fs'
+BOT_TOKEN = '7038112002:AAGisNqyjizKd6LYxeywdczzhn0ZTAIa3Y8'
 
 # Create a Pyrogram client
 app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
