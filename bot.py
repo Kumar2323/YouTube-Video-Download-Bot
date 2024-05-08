@@ -6,9 +6,9 @@ import asyncio
 
 # Replace 'YOUR_API_ID', 'YOUR_API_HASH', and 'YOUR_BOT_TOKEN' with your actual values
 
-API_ID = '25765618'
-API_HASH = '6eb079af3c5b768e8510486253fb4e9c'
-BOT_TOKEN = '7038112002:AAGisNqyjizKd6LYxeywdczzhn0ZTAIa3Y8'
+API_ID = '28590289'
+API_HASH = '1bef8b5cea600ded5cfd895434eb21e6'
+BOT_TOKEN = '6289287548:AAEVP00DCDGeCquKKMiFF7oVq5w3h2oXpPM'
 
 # Create a Pyrogram client
 app = Client("my_bot", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
@@ -47,7 +47,7 @@ async def process_youtube_link(client, message):
         video.download(filename='downloaded_video.mp4')
 
         # Uploading text message
-        uploading_msg = await message.reply_text("Uploading video...")
+        uploading_msg = await message.reply_text("Uploading video...wait bro")
 
         # Send the video file to the user
         sent_message = await app.send_video(message.chat.id, video=open('downloaded_video.mp4', 'rb'), caption=yt.title)
@@ -58,7 +58,7 @@ async def process_youtube_link(client, message):
         await uploading_msg.delete()
 
         # Send successful upload message
-        await message.reply_text("\n\nOWNER : @LISA_FAN_LK 💕\n\nSUCCESSFULLY UPLOADED!")
+        await message.reply_text("\n\nOWNER : @oopoijjp 💕\n\nSUCCESSFULLY UPLOADED!")
 
     except Exception as e:
         error_text = 'Error: Failed to process the YouTube link. Please make sure the link is valid and try again.'
